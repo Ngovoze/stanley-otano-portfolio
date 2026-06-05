@@ -43,6 +43,65 @@
   text-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
 }
 
+.hero-floating-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.hero-floating-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--teal), #13baf0);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 18px 42px rgba(0, 212, 146, 0.18), 0 14px 32px rgba(0, 0, 0, 0.45);
+  animation: heroIconWiggle 4.2s ease-in-out infinite;
+}
+
+.hero-floating-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}
+
+.hero-shield {
+  top: 95px;
+  right: 38px;
+}
+
+.hero-code {
+  left: 34px;
+  bottom: 94px;
+  animation-delay: 0.7s;
+}
+
+.hero-brush {
+  right: 78px;
+  bottom: 46px;
+  animation-delay: 1.35s;
+}
+
+@keyframes heroIconWiggle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-7px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+}
+
 .design-section {
   background:
     radial-gradient(circle at 18% 20%, rgba(0, 212, 146, 0.08), transparent 28%),
@@ -220,6 +279,32 @@
 }
 
 @media (max-width: 640px) {
+  .hero-floating-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .hero-floating-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .hero-shield {
+    top: 58px;
+    right: 18px;
+  }
+
+  .hero-code {
+    left: 18px;
+    bottom: 72px;
+  }
+
+  .hero-brush {
+    right: 42px;
+    bottom: 30px;
+  }
+
   .design-grid {
     grid-template-columns: 1fr;
   }
