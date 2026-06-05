@@ -9,38 +9,53 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="#home" class="brand">Stanley Otano</a>
+    <div class="nav-shell">
+      <a href="#home" class="brand">Stanley Otano</a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">home</a>
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#websites">websites</a>
-      <a href="#skills">skills</a>
-      <a href="#contact">contact</a>
-    </nav>
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#websites">Websites</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-bg"></div>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="status"><span></span>Available for new opportunities</p>
-          <h1>Stanley Otano</h1>
+
+          <h1>
+            <span>Stanley</span>
+            <span>Otano</span>
+          </h1>
+
           <p class="hero-text">
-            Cybersecurity Specialist &amp; Full-Stack Developer crafting secure, innovative digital solutions that protect and empower businesses in the digital age.
+            Cybersecurity Specialist &amp; Full-Stack Developer crafting secure,
+            innovative digital solutions that protect and empower businesses
+            in the digital age.
           </p>
+
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View My Work</a>
-            <a class="btn secondary" href="resume.pdf">Download Resume</a>
+            <a class="btn secondary" href="resume.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+              Download Resume
+            </a>
           </div>
 
-          <div class="stats">
+          <div class="stats" aria-label="Portfolio statistics">
             <div><strong>25+</strong><small>Projects Completed</small></div>
             <div><strong>3+</strong><small>Years Experience</small></div>
             <div><strong>30+</strong><small>Technologies</small></div>
@@ -48,10 +63,30 @@
           </div>
         </div>
 
-        <div class="hero-card">
-          <img src="https://res.cloudinary.com/dwzfachz0/image/upload/v1780642985/cr_stan_ytisax.png" alt="Stanley Otano" />
+        <div class="hero-visual" aria-label="Stanley Otano profile image">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="orbit orbit-three"></span>
+
+          <div class="profile-frame">
+            <div class="profile-inner">
+              <img src="https://res.cloudinary.com/dwzfachz0/image/upload/v1780642985/cr_stan_ytisax.png" alt="Stanley Otano" />
+            </div>
+          </div>
+
+          <div class="floating-icon shield-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4.5 5.2v5.7c0 4.7 3.1 9.1 7.5 10.6 4.4-1.5 7.5-5.9 7.5-10.6V5.2L12 2Zm0 2.2 5.5 2.35v4.35c0 3.55-2.2 6.9-5.5 8.45-3.3-1.55-5.5-4.9-5.5-8.45V6.55L12 4.2Z"/></svg>
+          </div>
+
+          <div class="floating-icon code-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8.7 7.3a1 1 0 0 1 0 1.4L5.4 12l3.3 3.3a1 1 0 1 1-1.4 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 0Zm6.6 0a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 1 1-1.4-1.4l3.3-3.3-3.3-3.3a1 1 0 0 1 0-1.4Z"/></svg>
+          </div>
         </div>
       </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span></span>
+      </a>
     </section>
 
     <section class="section about" id="about">
@@ -231,8 +266,7 @@
           </div>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true" class="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
+        <form name="contact" method="POST" class="contact-form">
           <h3>Send a Message</h3>
           <p>Fill out the form below and I'll get back to you as soon as possible.</p>
           <label>Name <input required type="text" name="name" placeholder="Your name" /></label>
@@ -251,8 +285,8 @@
         <p>Cybersecurity Specialist &amp; Full-Stack Developer</p>
       </div>
       <div>
-        <p>© 2024 Stanley Otano. All rights reserved.</p>
-        <small>Built with HTML, CSS &amp; JavaScript. Recreated from the live portfolio.</small>
+        <p>© 2026 Stanley Otano. All rights reserved.</p>
+        <small>Built with HTML, CSS &amp; JavaScript.</small>
       </div>
     </div>
   </footer>
