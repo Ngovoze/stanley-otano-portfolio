@@ -26,6 +26,60 @@ while ((textNode = walker.nextNode())) {
   textNode.nodeValue = updatedText;
 }
 
+const navSkillsLink = document.querySelector('.nav-links a[href="#skills"]');
+if (navSkillsLink && !document.querySelector('.nav-links a[href="#design"]')) {
+  const designNavLink = document.createElement("a");
+  designNavLink.href = "#design";
+  designNavLink.textContent = "Design";
+  navSkillsLink.parentNode.insertBefore(designNavLink, navSkillsLink);
+  designNavLink.addEventListener("click", () => navLinks.classList.remove("open"));
+}
+
+const skillsSection = document.querySelector("#skills");
+if (skillsSection && !document.querySelector("#design")) {
+  const designSection = document.createElement("section");
+  designSection.className = "section design-section";
+  designSection.id = "design";
+  designSection.innerHTML = `
+    <div class="container">
+      <div class="section-title center">
+        <p>Creative Services</p>
+        <h2>Graphic Design &amp; Digital Branding</h2>
+      </div>
+
+      <div class="design-intro glass-card">
+        <h3>Digital Branding &amp; Graphic Design</h3>
+        <p>
+          I create clean, professional digital and print-ready designs that help businesses present their services clearly and attract customers. My design work includes social media posters, business cards, letterheads, company profiles, flyers, branded documents, promotional graphics, and client marketing materials.
+        </p>
+        <p>
+          I focus on strong layout, brand consistency, readable typography, clean spacing, color balance, and designs that work well for social media, WhatsApp marketing, Facebook adverts, and business presentations.
+        </p>
+      </div>
+
+      <div class="design-grid">
+        <article><span>01</span><h3>Social Media Posters</h3><p>Designed posters, flyers, and promotional graphics for service-based businesses and campaigns.</p></article>
+        <article><span>02</span><h3>Business Branding</h3><p>Created branded business cards, letterheads, invoices, company profiles, and client documents.</p></article>
+        <article><span>03</span><h3>Promotional Layouts</h3><p>Developed clean visual layouts for cleaning services, electronics repair, travel, driving school, and product/service promotions.</p></article>
+        <article><span>04</span><h3>Brand Consistency</h3><p>Worked with brand colors, logos, typography, image placement, and call-to-action layouts.</p></article>
+        <article><span>05</span><h3>Image Editing</h3><p>Edited and enhanced images for professional use, including white-background portraits and document visuals.</p></article>
+        <article><span>06</span><h3>Short-form Video</h3><p>Edited short-form client videos, promotional reels, captions, and basic marketing storylines.</p></article>
+      </div>
+
+      <div class="tools-strip">
+        <strong>Tools:</strong>
+        <span>Canva</span>
+        <span>CapCut</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe After Effects</span>
+        <span>Figma</span>
+        <span>AI-assisted design tools</span>
+      </div>
+    </div>
+  `;
+  skillsSection.parentNode.insertBefore(designSection, skillsSection);
+}
+
 const footerContent = document.querySelector("footer .footer-grid > div:last-child");
 if (footerContent && !document.querySelector(".footer-socials")) {
   const socialLinks = document.createElement("div");
