@@ -25,3 +25,14 @@ while ((textNode = walker.nextNode())) {
   });
   textNode.nodeValue = updatedText;
 }
+
+const footerContent = document.querySelector("footer .footer-grid > div:last-child");
+if (footerContent && !document.querySelector(".footer-socials")) {
+  const socialLinks = document.createElement("div");
+  socialLinks.className = "footer-socials";
+  socialLinks.innerHTML = `
+    <a href="https://www.linkedin.com/in/stanley-otano-725670366/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://github.com/Ngovoze" target="_blank" rel="noopener noreferrer">GitHub</a>
+  `;
+  footerContent.appendChild(socialLinks);
+}
