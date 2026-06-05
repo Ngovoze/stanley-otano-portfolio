@@ -104,6 +104,24 @@ if (skillsSection && !document.querySelector("#design")) {
   skillsSection.parentNode.insertBefore(designSection, skillsSection);
 }
 
+const heroVisual = document.querySelector(".hero-visual");
+if (heroVisual && !document.querySelector(".hero-floating-icon")) {
+  const icons = document.createElement("div");
+  icons.className = "hero-floating-icons";
+  icons.innerHTML = `
+    <div class="hero-floating-icon hero-shield" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M12 2 4.5 5.2v5.7c0 4.7 3.1 9.1 7.5 10.6 4.4-1.5 7.5-5.9 7.5-10.6V5.2L12 2Zm0 2.2 5.5 2.35v4.35c0 3.55-2.2 6.9-5.5 8.45-3.3-1.55-5.5-4.9-5.5-8.45V6.55L12 4.2Z"/></svg>
+    </div>
+    <div class="hero-floating-icon hero-code" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M8.7 7.3a1 1 0 0 1 0 1.4L5.4 12l3.3 3.3a1 1 0 1 1-1.4 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 0Zm6.6 0a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 1 1-1.4-1.4l3.3-3.3-3.3-3.3a1 1 0 0 1 0-1.4Z"/></svg>
+    </div>
+    <div class="hero-floating-icon hero-brush" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M19.7 4.3a1 1 0 0 1 0 1.4l-8.2 8.2-1.4-1.4 8.2-8.2a1 1 0 0 1 1.4 0ZM8.8 13.5l1.7 1.7c-.8 2.8-2.95 4.8-6.5 4.8.9-.9 1.2-1.9 1.3-3.1.15-1.55 1.55-3.1 3.5-3.4Z"/></svg>
+    </div>
+  `;
+  heroVisual.appendChild(icons);
+}
+
 const footerContent = document.querySelector("footer .footer-grid > div:last-child");
 if (footerContent && !document.querySelector(".footer-socials")) {
   const socialLinks = document.createElement("div");
