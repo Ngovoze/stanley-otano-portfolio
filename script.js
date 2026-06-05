@@ -58,20 +58,44 @@ if (skillsSection && !document.querySelector("#design")) {
       </div>
 
       <div class="design-grid">
-        <article><span>01</span><h3>Social Media Posters</h3><p>Designed posters, flyers, and promotional graphics for service-based businesses and campaigns.</p></article>
-        <article><span>02</span><h3>Business Branding</h3><p>Created branded business cards, letterheads, invoices, company profiles, and client documents.</p></article>
-        <article><span>03</span><h3>Promotional Layouts</h3><p>Developed clean visual layouts for cleaning services, electronics repair, travel, driving school, and product/service promotions.</p></article>
-        <article><span>04</span><h3>Brand Consistency</h3><p>Worked with brand colors, logos, typography, image placement, and call-to-action layouts.</p></article>
-        <article><span>05</span><h3>Image Editing</h3><p>Edited and enhanced images for professional use, including white-background portraits and document visuals.</p></article>
-        <article><span>06</span><h3>Short-form Video</h3><p>Edited short-form client videos, promotional reels, captions, and basic marketing storylines.</p></article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5.2l-3.4 3.1a1 1 0 0 1-1.7-.75V17H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2.5 4.5a1 1 0 0 0 0 2h7a1 1 0 1 0 0-2h-7Zm0 4a1 1 0 1 0 0 2h4.7a1 1 0 0 0 0-2H6.5Z"/></svg></div>
+          <h3>Social Media Posters</h3>
+          <p>Designed posters, flyers, and promotional graphics for service-based businesses and campaigns.</p>
+        </article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5Zm4 2a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8Zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Zm0 4a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H8Z"/></svg></div>
+          <h3>Business Branding</h3>
+          <p>Created branded business cards, letterheads, invoices, company profiles, and client documents.</p>
+        </article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm3 4v10h10V7H7Zm2 2h6v2H9V9Zm0 4h4v2H9v-2Z"/></svg></div>
+          <h3>Promotional Layouts</h3>
+          <p>Developed clean visual layouts for cleaning services, electronics repair, travel, driving school, and product/service promotions.</p>
+        </article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3L18.6 8 12 11.7 5.4 8 12 4.3Zm-7 5.4 6 3.35v6.2l-6-3.35V9.7Zm14 0v6.2l-6 3.35v-6.2l6-3.35Z"/></svg></div>
+          <h3>Brand Consistency</h3>
+          <p>Worked with brand colors, logos, typography, image placement, and call-to-action layouts.</p>
+        </article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-2 10h14l-4.2-5.2a1 1 0 0 0-1.55 0l-2.45 3-1.45-1.75a1 1 0 0 0-1.55.02L5 17Z"/></svg></div>
+          <h3>Image Editing</h3>
+          <p>Edited and enhanced images for professional use, including white-background portraits and document visuals.</p>
+        </article>
+        <article>
+          <div class="design-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h8A2.5 2.5 0 0 1 17 5.5v1.2l3.1-1.55A1 1 0 0 1 21.5 6v12a1 1 0 0 1-1.4.9L17 17.3v1.2a2.5 2.5 0 0 1-2.5 2.5h-8A2.5 2.5 0 0 1 4 18.5v-13Z"/></svg></div>
+          <h3>Short-form Video</h3>
+          <p>Edited short-form client videos, promotional reels, captions, and basic marketing storylines.</p>
+        </article>
       </div>
 
       <div class="tools-strip">
         <strong>Tools:</strong>
-        <span>Canva</span>
-        <span>CapCut</span>
         <span>Adobe Photoshop</span>
         <span>Adobe After Effects</span>
+        <span>Canva</span>
+        <span>CapCut</span>
         <span>Figma</span>
         <span>AI-assisted design tools</span>
       </div>
