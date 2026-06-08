@@ -122,6 +122,29 @@ if (heroVisual && !document.querySelector(".hero-floating-icon")) {
   heroVisual.appendChild(icons);
 }
 
+const feroneCard = Array.from(document.querySelectorAll(".website-card")).find((card) =>
+  card.querySelector("h3")?.textContent.includes("Ferone Tours")
+);
+
+if (feroneCard) {
+  const currentVisual = feroneCard.querySelector(".website-placeholder, img");
+  if (currentVisual) {
+    const feroneImage = document.createElement("img");
+    feroneImage.src = "https://image.thum.io/get/width/1200/crop/650/https://www.feronetours.com/";
+    feroneImage.alt = "Ferone Tours and Travels website";
+    feroneImage.loading = "lazy";
+    currentVisual.replaceWith(feroneImage);
+  }
+
+  const feroneLink = feroneCard.querySelector(".text-link");
+  if (feroneLink) {
+    feroneLink.href = "https://www.feronetours.com/";
+    feroneLink.textContent = "Visit Website";
+    feroneLink.target = "_blank";
+    feroneLink.rel = "noopener";
+  }
+}
+
 const footerContent = document.querySelector("footer .footer-grid > div:last-child");
 if (footerContent && !document.querySelector(".footer-socials")) {
   const socialLinks = document.createElement("div");
